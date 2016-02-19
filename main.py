@@ -36,7 +36,9 @@ def saveForm(self):
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello!<br>')
-        self.response.write('Start your <a href="/start">form</a>')
+        self.response.write('Html <a href="/html">form</a> <br>')
+        self.response.write('Ajax <a href="/ajax">form</a>')
+
 
 # in this app (main.py), we will handle the following two urls
 app = webapp2.WSGIApplication([

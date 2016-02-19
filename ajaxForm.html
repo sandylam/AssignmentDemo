@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- A simple html that submit a form without using ajax or even javascript!! -->
+        <!-- Hint for Assignment 2, this form will not submit, implement ajax instead!! -->
         <title>Form Demo - input</title>
         <link href='/css/form.css' rel='stylesheet' type='text/css'></link>
+        
+        <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	
+        
+        <!-- your js script, load after jQuery -->
+        <script src="/js/form.js"></script>
     </head>
     <body>        
         <h1>A Simple Form</h1>        
@@ -11,6 +16,7 @@
             name:<input name="name" type="text"><br><br>
             age:<input name="age" type="number"><br><br>
             email:<input name="email" type="email"><br><br>
+                        
             <!-- or use the <button> element, it will also trigger form submission -->
             <input type="submit">
         </form>        

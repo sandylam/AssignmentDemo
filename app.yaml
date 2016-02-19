@@ -11,9 +11,18 @@ handlers:
   upload: favicon\.ico
 
 #  a static file mapping
-- url: /start
+- url: /html
   static_files: form.html
   upload: form.html
+  
+#  a static file mapping
+- url: /ajax
+  static_files: ajaxForm.html
+  upload: ajaxForm.html  
+
+# a static directory mapping
+- url: /js
+  static_dir: js
 
 # a static directory mapping
 - url: /css
