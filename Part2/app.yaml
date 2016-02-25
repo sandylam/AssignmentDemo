@@ -1,0 +1,32 @@
+
+# just the framework
+
+application: iems5718-demo
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+#  a static file mapping
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+# a static directory mapping
+- url: /css
+  static_dir: css
+  
+# a static directory mapping
+- url: /js
+  static_dir: js
+
+# main program handles all the other urls
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
